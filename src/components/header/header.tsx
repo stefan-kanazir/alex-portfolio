@@ -2,8 +2,8 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="container flex justify-between items-center h-24">
-      <h3>Hi, I’m Alex</h3>
+    <header className="flex justify-between items-center h-24">
+      <Link href="/">Hi, I’m Alex</Link>
       <ul className="flex items-center gap-8">
         <li>
           <Link href="/portfolio">Portfolio</Link>
