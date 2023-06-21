@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-primary;
+  }
+}
+
+@layer components {
+  .btn {
+    border-radius: theme("borderRadius.full");
+    padding: 0 theme("spacing.8");
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    height: theme("height.12");
+    border: 2px solid theme("colors.primary");
+  }
+
+  .btn-primary {
+    @apply btn;
+    background-color: theme("colors.primary");
+    color: theme("colors.white");
+  }
+}
