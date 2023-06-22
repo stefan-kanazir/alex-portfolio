@@ -14,7 +14,7 @@ function Header() {
         <li>
           <a
             href="https://calendly.com/adarbutina/15min"
-            target="blank"
+            target="_blank"
             className="btn-primary"
           >
             Book a call

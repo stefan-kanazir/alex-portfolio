@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-start pt-24 gap-6  w-[560px]">
+    <main className="flex min-h-[calc(100vh-200px)] flex-col items-start pt-32 gap-6  w-[560px]">
       <h1 className="text-5xl font-semibold">
         I provide tailored web design services that accelerate growth.
       </h1>
@@ -20,7 +20,7 @@ export default function Home() {
       <div className="flex gap-4">
         <a
           href="https://calendly.com/adarbutina/15min"
-          target="blank"
+          target="_blank"
           className="btn-primary"
         >
           Book a call

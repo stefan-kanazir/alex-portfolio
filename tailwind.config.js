@@ -11,6 +11,12 @@ module.exports = {
       primary: "#111111",
       white: "#FFFFFF",
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
     container: {
       center: true,
     },
