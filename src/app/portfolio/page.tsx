@@ -5,5 +5,9 @@ export const metadata: Metadata = {
 };
 
 export default function Portfolio() {
-  return <h1>Portfolio Page</h1>;
+  return (
+    <main className="flex min-h-[calc(100vh-200px)] flex-col items-start pt-32 gap-8  w-[500px]">
+      <h1>Portfolio Page</h1>
+    </main>
+  );
 }
