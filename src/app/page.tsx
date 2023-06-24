@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-[calc(100vh-200px)] flex-col items-start pt-16 md:pt-32 gap-6  max-w-[560px]">
+    <main className="flex min-h-[calc(100vh-260px)] flex-col items-start pt-16 md:pt-32 gap-6  max-w-[560px]">
       <h1 className="text-heading-2 md:text-heading-1">
         I provide tailored web design services that accelerate growth.
       </h1>
