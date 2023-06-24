@@ -3,7 +3,7 @@ import LinkedinIcon from "./linkedin-icon";
 
 function Footer() {
   return (
-    <footer className="flex flex-col gap-6 mt-12">
+    <footer className="flex flex-col gap-6 mt-12 pb-6">
       <a
         href="https://www.linkedin.com/in/aleksandar-arbutina/"
         target="_blank"
