@@ -1,10 +1,14 @@
 import Link from "next/link";
+import MenuIcon from "./menu-icon";
 
 function Header() {
   return (
     <header className="flex justify-between items-center h-24">
-      <Link href="/">Hi, I’m Alex</Link>
-      <ul className="flex items-center gap-8">
+      <Link href="/" className="text-lg border-b-2 font-bold">
+        Hi, I’m Alex
+      </Link>
+      <MenuIcon />
+      <ul className="hidden md:flex items-center gap-8">
         <li>
           <Link href="/portfolio">Portfolio</Link>
         </li>

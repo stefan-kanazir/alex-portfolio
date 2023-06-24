@@ -10,7 +10,9 @@ function Footer() {
       >
         <LinkedinIcon />
       </a>
-      <p>© 2023 Aleksandar Arbutina. All rights reserved.</p>
+      <p className="text-sm md:text-body">
+        © 2023 Aleksandar Arbutina. All rights reserved.
+      </p>
     </footer>
   );
 }

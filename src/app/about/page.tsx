@@ -6,8 +6,10 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="flex min-h-[calc(100vh-200px)] flex-col items-start pt-32 gap-8  w-[500px]">
-      <h2>Here’s a little bit about me...</h2>
+    <main className="flex min-h-[calc(100vh-200px)] flex-col items-start pt-16 md:pt-32 gap-8  max-w-[500px]">
+      <h1 className="text-heading-3 md:text-heading-2">
+        Here’s a little bit about me...
+      </h1>
       <article className="flex flex-col gap-6">
         <p>
           I’m a Product (UX/UI) Designer that specializes in visual design and
