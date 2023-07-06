@@ -1,6 +1,6 @@
 function MenuIcon() {
   return (
-    <button className="block md:hidden">
+    <button className="block md:hidden" aria-label="Menu icon">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"

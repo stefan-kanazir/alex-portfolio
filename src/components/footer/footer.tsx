@@ -7,6 +7,7 @@ function Footer() {
       <a
         href="https://www.linkedin.com/in/aleksandar-arbutina/"
         target="_blank"
+        aria-label="Aleksandar Arbutina Linkedin"
       >
         <LinkedinIcon />
       </a>

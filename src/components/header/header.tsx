@@ -4,7 +4,7 @@ import MenuIcon from "./menu-icon";
 function Header() {
   return (
     <header className="flex justify-between items-center h-24">
-      <Link href="/" className="text-lg border-b-2 font-bold">
+      <Link href="/" className="text-lg border-b-2 border-primary font-bold">
         Hi, I’m Alex
       </Link>
       <MenuIcon />

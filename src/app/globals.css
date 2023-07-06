@@ -11,12 +11,24 @@
     font-weight: 500;
     height: theme("height.12");
     border: 2px solid theme("colors.primary");
+    transition: theme("transitionTimingFunction.in");
+    transition-duration: theme("transitionDuration.150");
   }
 
   .btn-primary {
     @apply btn;
     background-color: theme("colors.primary");
     color: theme("colors.white");
+  }
+
+  .btn-secondary {
+    @apply btn;
+    color: theme("colors.primary");
+  }
+
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    opacity: 0.75;
   }
 
   .text-heading-1 {
@@ -49,6 +61,6 @@
 }
 
 body {
-  color: theme("colors.primary");
+  color: theme("colors.dark");
   background: url("../../public/images/background.jpg");
 }
