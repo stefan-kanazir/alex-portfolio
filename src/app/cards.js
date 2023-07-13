@@ -1,27 +1,21 @@
 // Mocked data
 export const CARDS = [
   {
-    icon: {
-      url: "/icons/stars.svg",
-      alt: "Stars Icon",
-    },
+    iconUrl: "/icons/stars.svg",
+    altText: "Stars Icon",
     title: "Top-notch quality",
-    paragraph: "Great design quality at your fingertips whenever you need it.",
+    text: "Great design quality at your fingertips whenever you need it.",
   },
   {
-    icon: {
-      url: "/icons/thunderbolt.svg",
-      alt: "Stars Icon",
-    },
+    iconUrl: "/icons/thunderbolt.svg",
+    altText: "Stars Icon",
     title: "Lightning fast delivery",
-    paragraph: "Get your design one at a time in just a few days on average.",
+    text: "Get your design one at a time in just a few days on average.",
   },
   {
-    icon: {
-      url: "/icons/fingerprint.svg",
-      alt: "Stars Icon",
-    },
+    iconUrl: "/icons/fingerprint.svg",
+    altText: "Stars Icon",
     title: "Unique and all yours",
-    paragraph: "Every design is made especially for you and is 100% yours.",
+    text: "Every design is made especially for you and is 100% yours.",
   },
 ];
