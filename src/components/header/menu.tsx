@@ -1,7 +1,21 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
 import MenuIcon from "./menu-icon";
+
+interface MenuItemProps {
+  href: string;
+  text: string;
+}
+
+function MenuItem({ href, text }: MenuItemProps) {
+  return (
+    <li>
+      <Link href={href}>{text}</Link>
+    </li>
+  );
+}
 
 function Menu() {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -16,18 +30,12 @@ function Menu() {
         className={`${
           isMenuOpened
             ? "flex max-md:fixed max-md:inset-0 max-md:bg-lightBlue max-md:flex-col"
-            : "hidden"
+            : "hidden md:flex"
         } items-center justify-center gap-8`}
       >
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/portfolio">Portfolio</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
+        <MenuItem href="/" text="Home" />
+        <MenuItem href="/portfolio" text="Portfolio" />
+        <MenuItem href="/about" text="About" />
         <li>
           <a
             href="https://calendly.com/adarbutina/15min"
