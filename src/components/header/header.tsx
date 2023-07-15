@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MenuIcon from "./menu-icon";
+import Menu from "./menu";
 
 function Header() {
   return (
@@ -7,24 +7,7 @@ function Header() {
       <Link href="/" className="text-lg border-b-2 border-primary font-bold">
         Hi, I’m Alex
       </Link>
-      <MenuIcon />
-      <ul className="hidden md:flex items-center gap-8">
-        <li>
-          <Link href="/portfolio">Portfolio</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <a
-            href="https://calendly.com/adarbutina/15min"
-            target="_blank"
-            className="btn-primary"
-          >
-            Book a call
-          </a>
-        </li>
-      </ul>
+      <Menu />
     </header>
   );
 }
