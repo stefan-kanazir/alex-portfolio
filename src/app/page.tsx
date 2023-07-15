@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-32">
-      <section className="flex flex-col items-start gap-6 max-w-[440px] mt-16 md:mt-32">
+    <main className="flex flex-col gap-32 mt-16 md:mt-32">
+      <section className="flex flex-col items-start gap-6 max-w-[440px]">
         <h1 className="text-heading-2 md:text-heading-1">
           Web design that accelerates business growth.
         </h1>

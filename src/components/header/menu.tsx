@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MenuIcon from "./menu-icon";
+import { usePathname } from "next/navigation";
 
 interface MenuItemProps {
   href: string;
@@ -19,6 +20,11 @@ function MenuItem({ href, text }: MenuItemProps) {
 
 function Menu() {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
+  const path = usePathname();
+
+  useEffect(() => {
+    setIsMenuOpened(false);
+  }, [path]);
 
   return (
     <>

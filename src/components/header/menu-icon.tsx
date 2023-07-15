@@ -37,7 +37,9 @@ function MenuIcon({ isMenuOpened = false, onClick }: MenuIconProps) {
 
   return (
     <button
-      className={`block md:hidden ${isMenuOpened ? "fixed z-10 right-8" : ""}`}
+      className={`flex items-center justify-end md:hidden w-12 h-12 ${
+        isMenuOpened ? "fixed z-10 right-8" : undefined
+      }`}
       onClick={onClick}
       aria-label="Menu icon"
     >
