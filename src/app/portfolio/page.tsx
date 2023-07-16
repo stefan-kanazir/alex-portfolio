@@ -1,7 +1,6 @@
 import { Metadata } from "next";
-import Link from "next/link";
 import { PROJECTS } from "../projects";
-import { Project } from "@/components";
+import { ProjectCard } from "@/components";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -15,7 +14,7 @@ export default function Portfolio() {
 
         <div className="grid md:grid-cols-2 gap-6">
           {PROJECTS.map((project) => (
-            <Project {...project} key={project.title} />
+            <ProjectCard {...project} key={project.title} />
           ))}
         </div>
       </section>

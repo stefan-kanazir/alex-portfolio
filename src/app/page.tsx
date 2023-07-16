@@ -1,4 +1,4 @@
-import { FeaturedCard, Project } from "@/components";
+import { FeaturedCard, ProjectCard } from "@/components";
 import { Metadata } from "next";
 import Link from "next/link";
 import { CARDS } from "./cards";
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-2 gap-6">
           {PROJECTS.map((project) => (
-            <Project {...project} key={project.title} />
+            <ProjectCard {...project} key={project.title} />
           ))}
         </div>
       </section>

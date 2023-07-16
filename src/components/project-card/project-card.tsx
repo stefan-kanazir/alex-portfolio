@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-interface ProjectProps {
+interface ProjectCardProps {
   title: string;
   imageUrl: string;
   altText: string;
@@ -8,7 +8,13 @@ interface ProjectProps {
   categories: string[];
 }
 
-function Project({ title, imageUrl, altText, text, categories }: ProjectProps) {
+function ProjectCard({
+  title,
+  imageUrl,
+  altText,
+  text,
+  categories,
+}: ProjectCardProps) {
   return (
     <div className="flex flex-col gap-4">
       <Image
@@ -34,4 +40,4 @@ function Project({ title, imageUrl, altText, text, categories }: ProjectProps) {
   );
 }
 
-export default Project;
+export default ProjectCard;
