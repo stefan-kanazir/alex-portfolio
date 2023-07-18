@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
-      primary: "#0056B9",
+      primary: "#1E51E1",
       dark: "#1E1E1E",
       white: "#FFFFFF",
       gray: "#323232",
@@ -17,8 +17,7 @@ module.exports = {
     screens: {
       sm: "640px",
       md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      lg: "1080px",
     },
     container: {
       center: true,

@@ -12,13 +12,18 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="flex flex-col gap-32 mt-16 md:mt-32">
-      <section className="flex flex-col items-start gap-6 max-w-[440px]">
-        <h1 className="text-heading-2 md:text-heading-1">
-          Web design that accelerates business growth.
+      <section className="flex flex-col items-start gap-6">
+        <h1 className="text-3xl md:text-6xl font-bold">
+          I design <span className="text-primary">digital products</span> that
+          accelerate business growth.
         </h1>
-        <p className="text-lg">
-          Elevate your business to the next level. Web design tailored to small
-          businesses, eCommerce, and more.
+        <p className="font-medium">
+          I’m a product designer that specializes in visual design and
+          conversion rate optimization. I currently manage creative projects and
+          design shopping experiences for an{" "}
+          <span className="text-primary">
+            international furniture eCommerce brand.
+          </span>
         </p>
         <div className="flex gap-4">
           <a
@@ -26,10 +31,10 @@ export default function Home() {
             target="_blank"
             className="btn-primary"
           >
-            Book a call
+            Schedule a call
           </a>
           <Link href="/portfolio" className="btn-secondary">
-            Portfolio
+            View Full Résumé
           </Link>
         </div>
       </section>

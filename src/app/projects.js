@@ -2,7 +2,7 @@
 export const PROJECTS = [
   {
     title: "Sailor Jewelry",
-    imageUrl: "/images/placeholder.jpg",
+    imageUrl: "/images/sailor-jewelry.jpg",
     altText: "Project - Sailor Jewelry",
     text: "Redesigning a product page for an eCommerce jewelry store in Serbia.",
     categories: ["eCommerce", "Jewelry", "Conceptual"],
