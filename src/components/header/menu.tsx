@@ -1,9 +1,10 @@
 "use client";
 
-import Link from "next/link";
+import NextLink from "next/link";
 import { useEffect, useState } from "react";
 import MenuIcon from "./menu-icon";
 import { usePathname } from "next/navigation";
+import { Link } from "../link";
 
 interface MenuItemProps {
   href: string;
@@ -13,7 +14,7 @@ interface MenuItemProps {
 function MenuItem({ href, text }: MenuItemProps) {
   return (
     <li>
-      <Link href={href}>{text}</Link>
+      <NextLink href={href}>{text}</NextLink>
     </li>
   );
 }
@@ -35,21 +36,17 @@ function Menu() {
       <ul
         className={`${
           isMenuOpened
-            ? "flex max-md:fixed max-md:inset-0 max-md:bg-lightBlue max-md:flex-col"
+            ? "flex max-md:container max-md:fixed max-md:inset-0 max-md:bg-white max-md:flex-col"
             : "hidden md:flex"
         } items-center justify-center gap-8`}
       >
         <MenuItem href="/" text="Home" />
         <MenuItem href="/portfolio" text="Portfolio" />
         <MenuItem href="/about" text="About" />
-        <li>
-          <a
-            href="https://calendly.com/adarbutina/15min"
-            target="_blank"
-            className="btn-primary"
-          >
-            Book a call
-          </a>
+        <li className="max-md:w-full">
+          <Link href="https://calendly.com/adarbutina/15min" external>
+            Schedule a call
+          </Link>
         </li>
       </ul>
     </>

@@ -6,15 +6,18 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <main className="flex min-h-[calc(100vh-260px)] flex-col items-start pt-16 md:pt-32 gap-8  max-w-[500px]">
-      <h1 className="text-heading-3 md:text-heading-2">
+    <main className="md:grid md:grid-cols-2 md:gap-8 min-h-[calc(100vh-420px)] mt-24 md:mt-32">
+      <h1 className="text-3xl font-bold max-md:mb-6">
         Here’s a little bit about me...
       </h1>
       <article className="flex flex-col gap-6">
         <p>
           I’m a Product (UX/UI) Designer that specializes in visual design and
           conversion rate optimization. I currently design experiences and
-          manage projects for an international eCommerce furniture business.
+          manage projects for an{" "}
+          <span className="text-primary">
+            international eCommerce furniture business.
+          </span>
         </p>
         <p>
           Back in 2020, I started my career as a front-end developer, but my

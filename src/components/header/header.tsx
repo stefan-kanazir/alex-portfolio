@@ -1,12 +1,15 @@
-import Link from "next/link";
+import NextLink from "next/link";
 import Menu from "./menu";
 
 function Header() {
   return (
     <header className="flex justify-between items-center h-24">
-      <Link href="/" className="text-lg border-b-2 border-primary font-bold">
+      <NextLink
+        href="/"
+        className="text-lg border-b-2 border-primary font-bold"
+      >
         Hi, I’m Alex
-      </Link>
+      </NextLink>
       <Menu />
     </header>
   );

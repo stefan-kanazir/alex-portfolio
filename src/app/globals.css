@@ -2,65 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .btn {
-    border-radius: theme("borderRadius.lg");
-    padding: 0 theme("spacing.4");
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    height: theme("height.12");
-    border: 2px solid theme("colors.primary");
-    transition: theme("transitionTimingFunction.in");
-    transition-duration: theme("transitionDuration.150");
-  }
-
-  .btn-primary {
-    @apply btn;
-    background-color: theme("colors.primary");
-    color: theme("colors.white");
-  }
-
-  .btn-secondary {
-    @apply btn;
-    color: theme("colors.primary");
-  }
-
-  .btn-primary:hover,
-  .btn-secondary:hover {
-    opacity: 0.75;
-  }
-
-  .text-heading-1 {
-    font-size: theme("fontSize.5xl");
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -2.5%;
-  }
-
-  .text-heading-2 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: -2.5%;
-  }
-
-  .text-heading-3 {
-    font-size: theme("fontSize.2xl");
-    font-weight: 700;
-    line-height: 1.3;
-    letter-spacing: -2.5%;
-  }
-
-  .text-body {
-    font-size: theme("fontSize.base");
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: -0.5%;
-  }
-}
-
 body {
   color: theme("colors.dark");
   background: url("../../public/images/background.jpg");

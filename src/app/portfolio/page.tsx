@@ -8,9 +8,9 @@ export const metadata: Metadata = {
 
 export default function Portfolio() {
   return (
-    <main className="flex flex-col gap-32 mt-16 md:mt-32">
-      <section className="mb-6">
-        <h2 className="text-heading-3">Portfolio</h2>
+    <main className="flex flex-col gap-24 md:gap-32 mt-24 md:mt-32 min-h-[calc(100vh-420px)]">
+      <section>
+        <h2 className="text-3xl font-bold mb-8">Here’s the work I’ve done</h2>
 
         <div className="grid md:grid-cols-2 gap-6">
           {PROJECTS.map((project) => (
