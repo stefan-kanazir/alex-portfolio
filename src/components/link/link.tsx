@@ -1,4 +1,4 @@
-import { cva, type VariantProps } from "class-variance-authority";
+import { cva } from "class-variance-authority";
 import NextLink from "next/link";
 
 const link = cva(
@@ -31,8 +31,12 @@ const link = cva(
   }
 );
 
+interface LinkVariants {
+  intent?: "primary" | "secondary";
+}
+
 interface LinkProps
-  extends VariantProps<typeof link>,
+  extends LinkVariants,
     React.ButtonHTMLAttributes<HTMLAnchorElement> {
   href: string;
   external?: boolean;
