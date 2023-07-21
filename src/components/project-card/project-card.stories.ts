@@ -17,7 +17,7 @@ type Story = StoryObj<typeof ProjectCard>;
 export const Default: Story = {
   args: {
     title: "Sailor Jewelry",
-    imageUrl: "https://images.unsplash.com/photo-1687902625864-faedb40f83a8",
+    imageUrl: "/images/sailor-jewelry.jpg",
     altText: "Project - Sailor Jewelry",
     text: "Redesigning a product page for an eCommerce jewelry store in Serbia.",
     categories: ["eCommerce", "Jewelry", "Conceptual"],
