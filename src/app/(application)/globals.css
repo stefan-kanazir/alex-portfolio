@@ -4,5 +4,5 @@
 
 body {
   color: theme("colors.dark");
-  background: url("../../public/images/background.jpg");
+  background: url("../../../public/images/background.jpg");
 }
