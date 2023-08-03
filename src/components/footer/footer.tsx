@@ -1,17 +1,6 @@
 import { fetchFooter } from "@/utils/fetchFooter";
 
-type SocialLink = {
-  _key: string;
-  label: string;
-  url: string;
-};
-
-type FooterData = {
-  copyright: string;
-  socialLinks: SocialLink[];
-};
-
-const footerData: FooterData = await fetchFooter();
+const footerData = await fetchFooter();
 
 function Footer() {
   const { copyright, socialLinks } = footerData;
