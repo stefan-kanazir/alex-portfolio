@@ -1,11 +1,17 @@
 import { type SchemaTypeDefinition } from "sanity";
 
-import blockContent from "./schemas/blockContent";
 import project from "./schemas/documents/project";
-import post from "./schemas/post";
-import author from "./schemas/author";
 import footer from "./schemas/documents/footer";
+import mainHero from "./schemas/objects/mainHero";
+import link from "./schemas/objects/link";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [post, author, project, blockContent, footer],
+  types: [
+    // Documents
+    project,
+    footer,
+    // Objects
+    mainHero,
+    link,
+  ],
 };
