@@ -15,13 +15,11 @@ export default defineType({
       name: "image",
       title: "Image",
       type: "image",
-      fields: [
-        {
-          name: "altText",
-          type: "string",
-          title: "Alt Text",
-        },
-      ],
+    }),
+    defineField({
+      name: "altText",
+      title: "Alt Text",
+      type: "string",
     }),
     defineField({
       name: "description",

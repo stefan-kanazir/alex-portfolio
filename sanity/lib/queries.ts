@@ -14,12 +14,8 @@ export const footerQuery = groq`
 export const projectsQuery = groq`
 *[_type=="project"][] {
     title,
-    image {
-        altText,
-        asset {
-        _ref
-        }
-    },
+    image,
+    altText,
     description,
     categories
 }

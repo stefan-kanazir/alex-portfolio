@@ -1,10 +1,13 @@
 import { Metadata } from "next";
-import { PROJECTS } from "../projects";
 import { ProjectCard } from "@/components";
+import { getProjects } from "../../../../sanity/lib/client";
+import { urlForImage } from "../../../../sanity/lib/image";
 
 export const metadata: Metadata = {
   title: "Portfolio",
 };
+
+const projects = await getProjects();
 
 export default function Portfolio() {
   return (
@@ -13,9 +16,21 @@ export default function Portfolio() {
         <h2 className="text-3xl font-bold mb-8">Here’s the work I’ve done</h2>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {PROJECTS.map((project) => (
-            <ProjectCard {...project} key={project.title} />
-          ))}
+          {projects.map((project) => {
+            const { title, altText, description, image, categories } = project;
+            const imageUrl = urlForImage(image)?.url();
+
+            return (
+              <ProjectCard
+                altText={altText}
+                categories={categories}
+                title={title}
+                text={description}
+                imageUrl={imageUrl}
+                key={project.title}
+              />
+            );
+          })}
         </div>
       </section>
     </main>

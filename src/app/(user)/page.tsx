@@ -1,12 +1,15 @@
 import { Link, FeaturedCard, ProjectCard } from "@/components";
 import { Metadata } from "next";
 import { CARDS } from "./cards";
-import { PROJECTS } from "./projects";
+import { getProjects } from "../../../sanity/lib/client";
+import { urlForImage } from "../../../sanity/lib/image";
 
 export const metadata: Metadata = {
   title: "Aleksandar Arbutina - Portfolio",
   description: "Portfolio website",
 };
+
+const projects = await getProjects();
 
 export default function Home() {
   return (
@@ -46,9 +49,21 @@ export default function Home() {
           </Link>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
-          {PROJECTS.map((project) => (
-            <ProjectCard {...project} key={project.title} />
-          ))}
+          {projects.map((project) => {
+            const { title, altText, description, image, categories } = project;
+            const imageUrl = urlForImage(image)?.url();
+
+            return (
+              <ProjectCard
+                altText={altText}
+                categories={categories}
+                title={title}
+                text={description}
+                imageUrl={imageUrl}
+                key={project.title}
+              />
+            );
+          })}
         </div>
       </section>
     </main>
