@@ -14,8 +14,8 @@ export default defineType({
     }),
     defineField({
       type: "boolean",
-      name: "intent",
-      title: "Variant",
+      name: "isPrimary",
+      title: "Is Primary Variant?",
       initialValue: true,
       validation: (rule) => rule.required(),
     }),
