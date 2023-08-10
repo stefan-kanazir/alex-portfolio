@@ -2,8 +2,8 @@ import { defineArrayMember, defineField, defineType } from "sanity";
 
 export default defineType({
   type: "document",
-  name: "page",
-  title: "Page",
+  name: "homepage",
+  title: "Homepage",
   fields: [
     defineField({
       type: "string",
